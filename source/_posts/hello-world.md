@@ -3,10 +3,13 @@ title:  fullPage
 category: [fullPage,前端]
 tags: [fullPage]
 ---
-- sectionsColor:
+```
+sectionsColor:
 可以给每一个section设置background-colors属性
-- sectionsColor:[red,yellow,....]
-- controArrows：
+ sectionsColor:[red,yellow,....]
+controArrows：
+```
+<!-- more -->
  定义是否通过箭头来控制slide幻灯片 默认是true flase表示没有箭头
 ```
 <div class="section">
@@ -24,7 +27,7 @@ tags: [fullPage]
 - verticalCentered： 每一页的内容是否垂直居中
 - resize：字体是否随着窗口的缩放而缩放 ，默认为false
  - scrollingSpeed: 滚动的速度，单位是毫秒，默认为700
- - anchors: 定义锚链接。默认值为[] .有了锚链接，用户就可以快速打开定位到某一个页面
+ - anchors: 定义锚链接。默认值为[] 有了锚链接，用户就可以快速打开定位到某一个页面
 注意定义锚链接的时候，值不要和页面中任意的id和那么相同，尤其是在IE浏览器下。而且定义时不需要加#
 
  - 在class中添加active能够实现自动定位

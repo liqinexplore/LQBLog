@@ -3,11 +3,11 @@ title:  Fetch 请求
 category: [React.js,Fetch]
 tags: [React.js,Fetch]
 ---
-## Fetch 请求
-###下面我们介绍一下ajax替代功能Fetch请求
-
+ ## Fetch 请求
+下面我们介绍一下ajax替代功能Fetch请求
   由于 Fetch API 是基于 Promise 设计
-  ```
+<!--more-->
+```
 fetch(url).then(function(response) {//url 请求 response 返回数据
 return response.json();//将数据转换为json格式    
 }).then(function(data) {
@@ -15,8 +15,8 @@ console.log(data);
 }).catch(function(e) {
 console.log("Oops, error");
 });  
-```   
-<!-- more -->
+```
+下面是基本的介绍  
 - Promise 构造函数接受一个函数作为参数，该函数的两个参数分别是 resolve 方法和 reject 方法。
 - 如果异步操作成功，则用 resolve 方法将 Promise 对象的状态，从「未完成」变为「成功」（即从 pending 变为 resolved）；
 - 如果异步操作失败，则用 reject 方法将 Promise 对象的状态，从「未完成」变为「失败」（-即从 pending 变为 rejected）。
@@ -64,3 +64,4 @@ getOlympicAll();
         message.info("删除失败" + e, 5);
 })
 ```
+出现错误欢迎大家指正。
